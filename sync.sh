@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/zsh
 
 cd "$(dirname "$0")"
 
 # matches every file in dir
-shopt -s dotglob
+#shopt -s dotglob
 
 for file in *; do
     if [ "$file" != "sync.sh" ] && [ "$file" != ".git" ]; then
