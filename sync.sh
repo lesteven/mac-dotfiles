@@ -2,12 +2,11 @@
 
 cd "$(dirname "$0")"
 
-# matches every file in dir
-#shopt -s dotglob
+setopt dotglob #include dotfiles
 
 for file in *; do
     if [ "$file" != "sync.sh" ] && [ "$file" != ".git" ]; then
-        rm "/home/$USER/$file" -rf
+        rm -rf "/home/$USER/$file"
         ln -sv "$(pwd)/$file" ~ 
     fi
 done
