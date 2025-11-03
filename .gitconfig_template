@@ -1,0 +1,5 @@
+[user]
+    email = <insert_email_here>
+    name = lesteven
+[core]
+    editor = 'vim'
