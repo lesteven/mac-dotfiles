@@ -30,3 +30,4 @@ augroup typescriptreact
 augroup END
 
 set nofixeol
+set regexpengine=0
